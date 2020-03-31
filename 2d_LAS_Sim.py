@@ -1,8 +1,8 @@
 
 # SELECT WHICH ALGORITHM TO USE:
 
-# ALGORITHM = "SRSF"
-ALGORITHM = "2D-LAS"
+# algorithm = "SRSF"
+algorithm = "2D-LAS"
 
 
 def priority_SRSF(time_needed, n_of_gpus, time_elapsed):
@@ -31,7 +31,7 @@ jcts = []
 while jobs_finished < 4:
     priorities = []
     for a_job in jobs:
-        if (ALGORITHM == "SRSF"):
+        if (algorithm == "SRSF"):
             priorities.append(priority_SRSF(a_job.time_needed, a_job.n_of_gpus, a_job.time_elapsed))
         else:
             priorities.append(priority_2DLAS(a_job.time_needed, a_job.n_of_gpus, a_job.time_elapsed))
