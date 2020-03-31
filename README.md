@@ -1,6 +1,8 @@
 # Shortest Remaining Service First (SRSF) and 2D-LAS simulator
 
-This project implements a simple scheduling simulator to compare the SRSF algorithm with the 2D-LAS algorithm as proposed in the paper "Tiresias: A GPU Cluster Manager for Distributed Deep Learning".
+This project implements a simple scheduler simulator to compare the SRSF algorithm with the 2D-LAS algorithm as proposed in the paper "Tiresias: A GPU Cluster Manager for Distributed Deep Learning".
+
+Original Paper: https://www.usenix.org/conference/nsdi19/presentation/gu
 
 The script is designed to simulate the following prompt:
 
@@ -8,4 +10,4 @@ The script is designed to simulate the following prompt:
 
 # Usage
 
-Uncomment the correct line to select the appropriate algorithm and run the script.
+Uncomment the correct line at the top to select the appropriate algorithm and run the script.
