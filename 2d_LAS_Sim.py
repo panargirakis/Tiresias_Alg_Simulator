@@ -3,7 +3,7 @@
 
 # algorithm = "SRSF"
 algorithm = "2D-LAS"
-
+print("Using algorithm: ", algorithm)
 
 # Shortest-remaining-service-first algorithm. Assumes known job completion time.
 def priority_SRSF(time_needed, n_of_gpus, time_elapsed):
@@ -32,7 +32,7 @@ class Job:
 
 
 # Create jobs. All jobs are assumed to take at least one time unit to complete.
-jobs = [Job(2,3, "J1"), Job(1,4, "J2"), Job(3,2, "J2"), Job(2,2, "J3")]
+jobs = [Job(2,3, "J1"), Job(1,4, "J2"), Job(3,2, "J3"), Job(2,2, "J4")]
 
 time_elapsed = 0  # keep track of time
 finished_jobs = []  # list of finished jobs
